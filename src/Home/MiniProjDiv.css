@@ -1,0 +1,10 @@
+.mini_proj_div{
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  border-radius: 0.5rem;
+}
+.mini_proj_div p{
+  font-size: 1rem;
+  line-height: 1.3rem;
+}

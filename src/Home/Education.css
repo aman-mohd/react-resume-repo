@@ -1,0 +1,16 @@
+.education_div{
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.degreeNyear{
+  display: flex;
+  position: relative;
+}
+
+.degreeNyear small{
+  display: flex;
+  position: absolute;
+  right: 0;
+}

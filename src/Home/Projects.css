@@ -1,0 +1,23 @@
+.eachProjectDiv{
+  margin: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.137) 0px 3px 6px;
+  /* border: 1px solid black; */
+}
+
+.toggler{
+  display: flex;
+  position: relative;
+}
+
+.toggler button{
+  position: absolute;
+  right: 0;
+  border: none;
+  font-size: 1.2rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
