@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="temporary_div">
       <h2>
-        This is my project Page
+        Uh Oh! Page under construction, Try again later.
       </h2>
     </div>
   )
