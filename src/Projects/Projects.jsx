@@ -1,5 +1,5 @@
-import React from 'react'
-import "./project.css"
+import React from 'react';
+import "./Project.css";
 
 const Projects = () => {
   return (
@@ -11,4 +11,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
