@@ -1,6 +1,6 @@
 import React from 'react'
 import { GoLocation, GoDeviceMobile, GoMail } from "react-icons/go";
-import dp from "../Pictures/dp.jpg"
+import dp from "../Pictures/dp-min.jpg"
 
 const Header = ({data:{fullname, currentLocation, phone, email}}) => {
   return (
