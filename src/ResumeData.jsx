@@ -36,7 +36,7 @@ const Data =
       info: "A page which shows testimonials from company employees. It fetches data from JSON format and automatically manipulates web content on pressing Next, Previous and Random Button.",
     },
   ],
-  skills: ["ReactJS", "React Router", "JavaScript", "HTML5", "CSS3", "Bootstrap", "AJAX", "AXIOS", "JSON", "ES6", "jQuery", "npm"],
+  skills: ["ReactJS", "React Router", "JavaScript", "HTML5", "CSS3", "Bootstrap", "AJAX", "AXIOS", "JSON", "ES6", "jQuery", "npm", "Git", "GitHub"],
   miniProjects: [
     {
       id: 1,
