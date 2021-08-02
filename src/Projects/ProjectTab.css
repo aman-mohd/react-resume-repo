@@ -11,8 +11,6 @@
 }
 
 .proj_thumbnail{
-  /* flex-basis: 33.33%; */
-  /* border:1px solid blue; */
   width: 25%;
   height: 20rem;
   display: flex;
@@ -35,7 +33,7 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 0.3rem;
   color: #2d638a;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in;
 }
 
 .each_proj_thum img{
@@ -44,13 +42,51 @@
   height: 100%;
 }
 
-.each_proj_thum h3{
-  padding: 0.25rem;
-}
 
 .each_proj_thum:hover{
   width: 95%;
   height: 18rem;
-  transition: ease-in 200ms;
+  transition: ease-in 100ms;
 }
 
+/* @media screen and (min-width: 1300px) { 
+  
+
+} */
+
+@media screen and (min-width:969px) and (max-width:1299px){
+  
+  .proj_thumbnail{
+    width: 35%;
+    
+  }  
+ 
+
+}
+
+@media screen and (min-width:770px) and (max-width:970px){
+  
+  .proj_thumbnail{
+    width: 45%;    
+  }
+  
+
+}
+
+@media screen and (max-width:769px){
+  
+  
+  .proj_thumbnail{
+    width: 93%;
+    height: 20rem;
+  }
+  
+  .each_proj_thum:hover{
+    width: 92%;
+    height: 18rem;
+    transition: ease-in 100ms;
+    padding: 0.5rem;
+  }
+
+
+}
