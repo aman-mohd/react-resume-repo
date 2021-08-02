@@ -26,8 +26,11 @@ const SingleProject = ({id, projectTitle, technologies, info}) => {
           <button className={toggle?"accord_btn":"accord_btn_active"}><MdKeyboardArrowRight/></button>
         </div>
 
-        <h4>{technologies}</h4>
-        <p>{info}</p>
+        {/* <h4>{technologies}</h4>
+        <p>{info}</p> */}
+
+        {toggle && <><h4>{technologies}</h4>
+        <p>{info}</p></>}
       </div>
     </>
   )

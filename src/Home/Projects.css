@@ -1,6 +1,6 @@
 .eachProjectDiv{
   height: 2.5rem;
-  overflow: hidden;
+  min-height: fit-content;
   margin: 17px;
   padding: 10px;
   border-radius: 5px;
@@ -33,7 +33,7 @@
   padding: 10px;
   height: 8.7rem;
   margin: 17px;
-  max-height: 10rem;
+  max-height: fit-content;
   border-radius: 5px;
   overflow: hidden;
   transition: all 150ms ease-in-out;

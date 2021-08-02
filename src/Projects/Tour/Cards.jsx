@@ -68,7 +68,12 @@ const Cards = () => {
 
   return (
     <>
-      <ToursCards tourPack={tourPack} removeItem={removeItem} />
+        <div className="container">
+        <h1 className="tour_head">Our Tours</h1>
+      {tourPack.map(packs => (
+        <ToursCards key={packs.id} packs={packs} removeItem={removeItem} />
+        ))}
+        </div>
     </>
   )
 }
