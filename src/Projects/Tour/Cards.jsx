@@ -58,7 +58,7 @@ const Cards = () => {
       <main>
         <div className='container'>
           <h1 className="no_tour_head">No Tours Left</h1>
-          <button className='btn' onClick={() => fetchTours()}>
+          <button className='btn_refresh' onClick={() => fetchTours()}>
             Refresh
           </button>
         </div>
