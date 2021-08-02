@@ -1,7 +1,9 @@
 .proj_thumbnail_container{
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
+  justify-content: center;
+  min-height: calc(100vh - 3.5rem);
   max-height: fit-content;
   padding: 1.5rem;
   font-family: 'Roboto', sans-serif;
@@ -9,16 +11,20 @@
 }
 
 .proj_thumbnail{
-  flex-basis: 33.33%;
+  /* flex-basis: 33.33%; */
+  border:1px solid blue;
+  width: 25%;
   height: 20rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .each_proj_thum{
-  margin-top: 1rem;
-  width: 70%;
+
+  margin-top: 0.5rem;
+  margin-left: 3%;
+  width: 90%;
   height: 17rem;
   overflow: hidden;
   display: flex;
@@ -43,7 +49,7 @@
 }
 
 .each_proj_thum:hover{
-  width: 72%;
+  width: 95%;
   height: 18rem;
   transition: ease-in 200ms;
 }
