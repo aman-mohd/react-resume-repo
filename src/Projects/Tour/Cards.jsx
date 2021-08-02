@@ -6,6 +6,7 @@ const url = 'https://course-api.com/react-tours-project'
 const Cards = () => {
   const [tourPack, setTourPack] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
   const fetchTours = async () => {
     setIsLoading(true)
@@ -16,6 +17,7 @@ const Cards = () => {
       setTourPack(tours);
     } catch (error) {
       setIsLoading(false);
+      setIsError(true);
       console.log(error);
     }
   }
@@ -35,6 +37,19 @@ const Cards = () => {
     <div className="container">
       <h1 className="loading">Loading...</h1>
     </div>
+    )
+  }
+
+  if (isError) {
+    return(
+      <main>
+        <div className='container'>
+          <h1 className="no_tour_head">Error Fetching API</h1>
+          <button className='btn_refresh' onClick={() => fetchTours()}>
+            Refresh
+          </button>
+        </div>
+      </main>
     )
   }
 
