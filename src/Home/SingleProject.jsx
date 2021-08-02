@@ -1,24 +1,33 @@
-import React, { useState } from 'react';
-import { AiOutlineInfo  } from "react-icons/ai";
-import { BsArrowsCollapse } from "react-icons/bs";
+import React, { useState, useEffect } from 'react';
+
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 
-const SingleProject = ({projectTitle, technologies, info}) => {
+
+const SingleProject = ({id, projectTitle, technologies, info}) => {
 
   const [toggle, setToggle] = useState(true);
 
   const clickHandler = () => {
     setToggle(!toggle);
   }
+
+  useEffect(() => {
+    if (id == 1) {
+      setTimeout(()=>{setToggle(!toggle)},2000);
+    }
+  }, [])
+
   return (
     <>
-      <div className="eachProjectDiv">
+      <div onClick={clickHandler} className={toggle?"eachProjectDivActive":"eachProjectDiv"}>
         <div className="toggler">
           <h3>{projectTitle}</h3>
-          <button onClick={clickHandler}>{toggle? <BsArrowsCollapse/> : <AiOutlineInfo/>}</button>
+          <button className={toggle?"accord_btn":"accord_btn_active"}><MdKeyboardArrowRight/></button>
         </div>
-        {toggle && <><h4>{technologies}</h4>
-          <p>{info}</p></>}
+
+        <h4>{technologies}</h4>
+        <p>{info}</p>
       </div>
     </>
   )

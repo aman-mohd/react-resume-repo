@@ -10,7 +10,7 @@ const Header = ({data:{fullname, currentLocation, phone, email}}) => {
       </div>
 
       <div className="dp_div">
-        <img src={dp} alt="na" />
+        <img className="imgdp" src={dp} alt="na" />
       </div>
 
       <div className="contact_div">

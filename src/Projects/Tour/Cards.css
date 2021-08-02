@@ -1,0 +1,123 @@
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  max-height: fit-content;
+  background: -webkit-linear-gradient(to top, #ffffff, #abbaab);  
+  background: linear-gradient(to top, #ffffff, #abbaab); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.tourCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  margin: 1rem;
+  width: 45%;
+  background-color:#2CFFF7;
+  border-radius: 0.5rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+  overflow: hidden;
+}
+
+
+.tourImgDiv{
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+
+.name_price{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.name_price h1{
+  left: 0;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.name_price h2{
+  position: absolute;
+  font-size: 1.2rem;
+  color: rgb(98, 145, 231);
+  right: 1rem;
+  padding: 0 2rem;
+  background-color: rgb(241, 227, 231);
+}
+
+.tour_info{
+  padding: 2rem;
+}
+
+
+.read_clicker{
+  margin-left: 0.41rem;
+  color: blue;
+}
+.read_clicker:hover{
+  cursor: pointer;
+}
+
+
+.tourCard button{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  border: 0px;
+  border-radius: 0.1rem;
+  background-color: rgb(241, 227, 231);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.tourCard button:hover{
+  cursor: pointer;
+  background-color: rgba(180, 137, 137, 0.486);
+}
+
+.btn{
+  font-size: 1.3rem;
+  margin: 1rem;
+  background-color: blue;
+  color: white;
+  border: 0px;
+  width: 15%;
+  padding: 0.7rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.btn:hover{
+  cursor: pointer;
+  color: #49a6e9;
+  background-color: rgb(223, 227, 236);
+}
+
+.no_tour_head{
+  font-size: 3rem;
+}
+
+
+.loading{
+  font-size: 3rem;
+}
+
+.tour_head{
+  margin-top: 1.8rem;
+  font-size: 3rem;
+  border-bottom: 4px solid #3e91cc;
+}

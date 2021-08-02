@@ -1,9 +1,16 @@
 .eachProjectDiv{
+  height: 2.5rem;
+  overflow: hidden;
   margin: 17px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.137) 0px 3px 6px;
-  /* border: 1px solid black; */
+  transition: all 150ms ease-in-out;
+}
+
+.eachProjectDiv:hover{
+ background-color: rgba(69, 219, 69, 0.384);
+ cursor: pointer;
 }
 
 .toggler{
@@ -20,4 +27,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.eachProjectDivActive{
+  padding: 10px;
+  height: 8.7rem;
+  margin: 17px;
+  max-height: 10rem;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 150ms ease-in-out;
+}
+.eachProjectDivActive:hover{
+  background-color: rgba(255, 0, 0, 0.192);
+  cursor: pointer;
+}
+
+.accord_btn{
+  background-color: white;
+  border-radius: 50%;
+  transition: all 200ms linear;
+  transform: rotateZ(90deg) translate(10%);
+  
+}
+.accord_btn_active{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: all 200ms linear;
+
 }
